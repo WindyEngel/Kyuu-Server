@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link your stylesheet here -->
+    <style>
+        .product {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+        .product img {
+            max-width: 200px;
+            height: auto;
+        }
+        .product-details {
+            flex-grow: 1;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Your Company Name</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="Kyuucia.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="/Contact/contact.html">Contact</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <!-- Add more navigation links as needed -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="shop" class="section">
+        <div class="container">
+            <h2>Shop</h2>
+            <div class="product">
+                <img src="product1.jpg" alt="Product 1">
+                <div class="product-details">
+                    <h3>Product 1</h3>
+                    <p>$10</p>
+                    <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="product2.jpg" alt="Product 2">
+                <div class="product-details">
+                    <h3>Product 2</h3>
+                    <p>$15</p>
+                    <button onclick="addToCart('Product 2', 15)">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Add more products as needed -->
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Your Company Name</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script> <!-- Link your JavaScript file here -->
+    <script>
+        function addToCart(productName, price) {
+            alert(`Added ${productName} to cart. Price: $${price}`);
+            // Here you would typically add the item to a cart object or perform some other action
+        }
+    </script>
+</body>
+</html>
