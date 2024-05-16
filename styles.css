@@ -106,3 +106,16 @@ body {
     color: #fff;
     text-decoration: none;
 }
+
+.row {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    padding: 20px 0px;
+    flex-wrap: wrap;
+}
+
+.row div  {
+    flex: 1 auto;
+    width: 300px;
+}
